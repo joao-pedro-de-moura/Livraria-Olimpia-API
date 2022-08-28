@@ -5,9 +5,11 @@ import fornecedores from "./router/fornecedoresRouter.js"
 import routerEstoque from "./router/routerEstoque.js";
 import { routerFuncionario } from "./router/routerFuncionario.js";
 import routerLivros from "./router/routerLivros.js";
+import cors from "cors"
+
 
 const app = express()
-
+app.use(cors())
 app.use(express.json())
 
 
